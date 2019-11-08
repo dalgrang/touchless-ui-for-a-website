@@ -1,0 +1,25 @@
+header {
+    background-color: #343a40;
+}
+nav a {
+    display: inline-block;
+    margin: 10px 20px;
+}
+video#videoElement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: none;
+    z-index: 100000;
+}
+body .carousel-control-next, body .carousel-control-prev {
+    opacity: 1;
+}
+body .accordion >.card {
+    overflow: visible;
+}
+footer {
+    background-color: green;
+    padding: 6% 0%;
+}

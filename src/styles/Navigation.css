@@ -1,0 +1,116 @@
+.scroll-area {
+    position: fixed;
+    z-index: 1000;
+    width: 50%;
+    height: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: height 0.1s;
+}
+.scroll-up {
+    top: 0;
+    border-radius: 0px 0px 100px 100px;
+}
+.scroll-down {
+    bottom: 0;
+    border-radius: 100px 100px 0px 0px;
+}
+.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.arrow#arrow-down {
+    border-width: 40px 40px 0 40px;
+    border-color: white transparent transparent transparent;
+}
+.arrow#arrow-up {
+    border-width: 0px 40px 40px 40px;
+    border-color: transparent transparent white transparent;
+}
+.areaPointer-navigation .scroll-area:before,
+.areaPointer-navigation .back-forward-area:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-image: url('/images/emoji-happy-round.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1000;
+    display: none;
+}
+.scroll-up.active,
+.scroll-down.active {
+    height: 80px;
+}
+.scroll-up.active .arrow,
+.scroll-down.active .arrow {
+    display: block;
+}
+#area-pointer.border-top .scroll-up,
+#area-pointer.border-bottom .scroll-down {
+    height: 80px;
+}
+#area-pointer.border-top .arrow#arrow-up,
+#area-pointer.border-bottom .arrow#arrow-down,
+#area-pointer.border-top .scroll-up:before,
+#area-pointer.border-bottom .scroll-down:before {
+    display: block;
+}
+.back-forward-area {
+    position: fixed;
+    z-index: 1000;
+    height: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: width 0.1s;
+}
+.go-back {
+    left: 0;
+    width: 0px;
+    border-radius: 0px 100px 100px 0px;
+}
+.go-forward {
+    right: 0;
+    width: 0px;
+    border-radius: 100px 0px 0px 100px;
+}
+.arrow#arrow-back {
+    border-width: 40px 40px 40px 0;
+    border-color: transparent white transparent transparent;
+}
+.arrow#arrow-forward {
+    border-width: 40px 0px 40px 40px;
+    border-color: transparent transparent transparent white;
+}
+.go-back.enabled.active,
+.go-forward.enabled.active {
+    width: 80px;
+}
+.go-back.enabled.active .arrow,
+.go-forward.enabled.active .arrow {
+    display: block;
+}
+#area-pointer.border-right .go-forward.enabled,
+#area-pointer.border-left .go-back.enabled {
+    width: 80px;
+}
+#area-pointer.border-right .go-forward.enabled .arrow,
+#area-pointer.border-left .go-back.enabled .arrow,
+#area-pointer.border-right .go-forward:before,
+#area-pointer.border-left .go-back:before {
+    display: block;
+}
