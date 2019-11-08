@@ -20,5 +20,5 @@ npm install
 ## Starting the project
 In the project directory, run the following command to start the project:
 ```
-npm start
+npm run touchless-ui
 ```
