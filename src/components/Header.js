@@ -34,7 +34,7 @@ class Header extends React.Component {
 
         return (
             <header>
-                <Container className="bg-dark py-5 text-white">
+                <Container className="py-5 text-white">
                     <Row>
                         <Col s={12} md={6} className="text-md-left">
                             <h3>Touchless User Interface<br />for Interacting with a Website</h3>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Carousel, CardDeck, Card, Button, Row, Col } from 'react-bootstrap';
+import { Container, Carousel, Card, Button, Row, Col } from 'react-bootstrap';
 
 function HomePage() {
 
@@ -43,32 +43,38 @@ function HomePage() {
                 </Carousel.Item>
             </Carousel>
 
-            <CardDeck>
-                <Card>
-                    <Card.Img variant="top" data-src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title 1</Card.Title>
-                        <Card.Text>Vivamus porta tellus leo, nec faucibus mi accumsan vitae.</Card.Text>
-                        <Button as={Link} to='/blog'>To Blog</Button>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" data-src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title 2</Card.Title>
-                        <Card.Text>Maecenas at neque et magna semper faucibus.</Card.Text>
-                        <Button as={Link} to='/gallery'>To Gallery</Button>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" data-src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title 3</Card.Title>
-                        <Card.Text>Donec a commodo massa, eget tincidunt erat.</Card.Text>
-                        <Button as={Link} to='/blog'>To Blog</Button>
-                    </Card.Body>
-                </Card>
-            </CardDeck>
+            <Row className="my-5">
+                <Col className="d-flex">
+                    <Card>
+                        <Card.Img variant="top" data-src="holder.js/100px160" />
+                        <Card.Body>
+                            <Card.Title>Card title 1</Card.Title>
+                            <Card.Text>Vivamus porta tellus leo, nec faucibus mi accumsan vitae.</Card.Text>
+                            <Button as={Link} to='/blog'>To Blog</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col className="d-flex">
+                    <Card>
+                        <Card.Img variant="top" data-src="holder.js/100px160" />
+                        <Card.Body>
+                            <Card.Title>Card title 2</Card.Title>
+                            <Card.Text>Maecenas at neque et magna semper faucibus.</Card.Text>
+                            <Button as={Link} to='/gallery'>To Gallery</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col className="d-flex">
+                    <Card>
+                        <Card.Img variant="top" data-src="holder.js/100px160" />
+                        <Card.Body>
+                            <Card.Title>Card title 3</Card.Title>
+                            <Card.Text>Donec a commodo massa, eget tincidunt erat.</Card.Text>
+                            <Button as={Link} to='/blog'>To Blog</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
 
             <Row className="my-5">
                 <Col>

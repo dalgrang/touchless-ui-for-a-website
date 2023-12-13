@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Jumbotron, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import CustomModal from '../components/CustomModal';
 
 function GalleryPage() {
@@ -8,11 +8,11 @@ function GalleryPage() {
     return (
         <Container className="gallery">
 
-            <Jumbotron className="my-5 text-center">
+            <div className="my-5 text-center">
                 <h1>Gallery page</h1>
                 <p>This is Gallery page </p>
                 <p><Button as={Link} to="/blog">To Blog</Button></p>
-            </Jumbotron>
+            </div>
 
             <Row>
                 <Col xs={6} md={3}>

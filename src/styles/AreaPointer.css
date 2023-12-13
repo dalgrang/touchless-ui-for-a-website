@@ -40,20 +40,20 @@
     z-index: 1000;
 }
 .clickable.clickable1::after {
-    background-image: url('/images/emoji-happy.png');
+    background-image: url('/public/images/emoji-happy.png');
 }
 .clickable.clickable2::after {
-    background-image: url('/images/emoji-surprised.png');
+    background-image: url('/public/images/emoji-surprised.png');
 }
 .clickable.clickable3::after {
-    background-image: url('/images/emoji-sad.png');
+    background-image: url('/public/images/emoji-sad.png');
 }
 .clickable.clickable4::after {
-    background-image: url('/images/emoji-angry.png');
+    background-image: url('/public/images/emoji-angry.png');
 }
 .clickable.clickable5::after {
-    background-image: url('/images/emoji-disgusted.png');
+    background-image: url('/public/images/emoji-disgusted.png');
 }
 .clickable.clickable6::after {
-    background-image: url('/images/emoji-fearful.png');
+    background-image: url('/public/images/emoji-fearful.png');
 }

@@ -44,7 +44,7 @@
     transform: translate(-50%, -50%);
     width: 25px;
     height: 25px;
-    background-image: url('/images/emoji-happy-round.png');
+    background-image: url('/public/images/emoji-happy-round.png');
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 1000;
