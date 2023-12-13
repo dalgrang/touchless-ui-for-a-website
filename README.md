@@ -1,7 +1,11 @@
 # Touchless User Interface for a Website
 Interact with a website using the point/area pointers that are controlled by the position of the face and the facial expressions.
 
+For an optimal experience, ensure that your webcam is properly positioned to capture your face, and adequate lighting greatly aids in recognizing facial expressions.
+
 This project is for my bachelor's thesis, [Prototyping Touchless User Interface for Interacting with a Website](https://www.theseus.fi/handle/10024/266107).
+
+[Click here for a live demo!](https://touchless-ui.dalgrangstudio.com/)
 
 The project is built by using following libraries: [face-api.js](https://github.com/justadudewhohacks/face-api.js/), [Create React App](https://github.com/facebook/create-react-app), [React](https://github.com/facebook/react/), and [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap).
 
